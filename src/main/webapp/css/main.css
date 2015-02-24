@@ -1,0 +1,13 @@
+.login-panel {
+	width: 550px;
+	margin: 0 auto;
+	line-height: 3.0rem;
+}
+
+.login-panel .row {
+	margin-top: 10px;
+}
+
+.login-panel .message-box {
+	display: none;
+}
