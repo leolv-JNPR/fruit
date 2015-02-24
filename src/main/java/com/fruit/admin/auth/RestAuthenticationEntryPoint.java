@@ -1,4 +1,4 @@
-package com.fruit.admin.components;
+package com.fruit.admin.auth;
 
 import java.io.IOException;
 
@@ -19,7 +19,6 @@ public class RestAuthenticationEntryPoint implements AuthenticationEntryPoint {
 			HttpServletResponse response, AuthenticationException authException)
 			throws IOException, ServletException {
 		logger.info("authing.......");
-		System.out.println("authing.....");
 		response.sendError(HttpServletResponse.SC_UNAUTHORIZED, "Unauthorized");
 	}
 

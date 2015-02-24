@@ -62,7 +62,15 @@
             <servlet-name>fruit</servlet-name>
             <url-pattern>/</url-pattern>
         </servlet-mapping>
-	
+	<servlet-mapping>
+		<servlet-name>default</servlet-name>
+		<url-pattern>*.css</url-pattern>
+		<url-pattern>*.js</url-pattern>
+		<url-pattern>*.gif</url-pattern>
+		<url-pattern>*.jpg</url-pattern>
+		<url-pattern>*.png</url-pattern>
+		<url-pattern>*.map</url-pattern>
+	</servlet-mapping>
 	<!-- spring security configuration -->
 	<filter>
 	   <filter-name>springSecurityFilterChain</filter-name>

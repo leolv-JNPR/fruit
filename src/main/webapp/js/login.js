@@ -12,5 +12,7 @@ function login(){
 		return;
 	}
 	Fruit.RestClient.post({url:'j_spring_security_check', params:{j_username: username, j_password: password}}, 
-			function(){console.log("log in")});
+			function(){
+		console.log("log in")
+		});
 }

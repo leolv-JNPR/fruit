@@ -27,7 +27,7 @@
       class="org.springframework.security.web.authentication.SimpleUrlAuthenticationFailureHandler"/>
  
    <authentication-manager alias="authenticationManager">
-		<!-- <authentication-provider ref="fruitAuthenticationProvider"/> -->
+		<!-- <authentication-provider user-service-ref="fruitUserDetailsService"/> -->
 		<authentication-provider>
          <user-service>
             <user name="temporary" password="temporary" authorities="ROLE_ADMIN"/>
@@ -36,8 +36,8 @@
       </authentication-provider>
    </authentication-manager>
    
-   <beans:bean id="fruitAuthenticationProvider" class="com.fruit.admin.auth.FruitAuthenticationProvider"/>
+   <beans:bean id="fruitUserDetailsService" class="com.fruit.admin.auth.FruitUserDetailsService"/>
    
-   <beans:bean id="restAuthenticationEntryPoint" class="com.fruit.admin.components.RestAuthenticationEntryPoint"></beans:bean>
+   <beans:bean id="restAuthenticationEntryPoint" class="com.fruit.admin.auth.RestAuthenticationEntryPoint"></beans:bean>
  
 </beans:beans>
