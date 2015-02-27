@@ -8,3 +8,5 @@ release.properties
 .settings/
 .classpath
 .DS_Store
+.idea/
+*.iml
