@@ -12,7 +12,14 @@ function login(){
 		return;
 	}
 	Fruit.RestClient.post({url:'j_spring_security_check', params:{j_username: username, j_password: password}}, 
-			function(){
-		console.log("log in")
-		});
+		function(){
+		    /** login success **/
+		},function(){
+            /** login failed **/
+            if(arguments[0].status === 401){
+                $("#message_box").html("用户名密码错误");
+                $("#message_box").show();
+                return;
+            }
+        });
 }
