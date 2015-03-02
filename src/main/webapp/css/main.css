@@ -1,3 +1,15 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    background: #daecf4;
+    height: 100%;
+    width: 100%;
+}
+
+html {
+    overflow: hidden;
+}
+
 .login-panel {
 	width: 550px;
 	margin: 0 auto;
@@ -10,4 +22,15 @@
 
 .login-panel .message-box {
 	display: none;
+}
+
+.logo {
+    font-size: 2rem;
+}
+
+.left-nav {
+    float: left;
+    width: 220px;
+    border-right: 1px solid #CCC;
+    height: 100%;
 }

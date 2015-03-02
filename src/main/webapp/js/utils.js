@@ -45,3 +45,9 @@ Fruit.RestClient = {
     }
 };
 
+Fruit.Navigation = {
+    navigateTo: function(navId){
+        var task = new Fruit.Task(navId);
+    }
+};
+

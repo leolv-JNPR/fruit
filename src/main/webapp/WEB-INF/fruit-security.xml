@@ -12,6 +12,7 @@
  
    <http entry-point-ref="restAuthenticationEntryPoint" auto-config="true" use-expressions="true">
       <intercept-url pattern="/api/admin/**" access="hasRole('ROLE_ADMIN')"/>
+       <intercept-url pattern="/main.jsp" access="hasRole('ROLE_ADMIN')"/>
  
       <form-login
          authentication-success-handler-ref="mySuccessHandler"
