@@ -11,7 +11,7 @@
 	<context-param>
 		<param-name>contextConfigLocation</param-name>
 		<param-value>
-			/WEB-INF/fruit-security.xml<!-- , /WEB-INF/fruit-security.xml -->
+			/WEB-INF/fruit-security.xml, /WEB-INF/fruit-mysql-ds.xml<!-- , /WEB-INF/fruit-security.xml -->
 		</param-value>
 	</context-param>
 	<!-- 必须把ContextLoaderListener配置放到Log4jConfigListener之后，否则启动会有问题。 -->
